@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회의실 예약</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>회의실 예약</h1>
+      <form id="booking-form">
+        <label>회의실 <select id="room"><option>A회의실</option><option>B회의실</option></select></label>
+        <label>날짜 <input id="date" type="date" required /></label>
+        <label>시작 <input id="start-time" type="time" required /></label>
+        <label>종료 <input id="end-time" type="time" required /></label>
+        <label>예약자 <input id="booker" type="text" /></label>
+        <button type="submit">예약하기</button>
+      </form>
+      <p id="message" role="status"></p>
+      <h2>예약 목록</h2>
+      <ul id="booking-list"></ul>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
